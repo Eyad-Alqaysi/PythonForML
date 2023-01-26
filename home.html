@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Python for ML</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        *, ::after, ::before {
+            box-sizing: border-box;
+        }
+        .center{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table {
+            color: rgb(230, 223, 211);
+            border-collapse: separate;
+            border-radius: 10px;
+            border-spacing: 0;
+            border-color: #212529;
+            color: #212529;
+            font: 20px/2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+            caption-side: bottom;
+            display: table;
+            box-sizing: border-box;
+            text-indent: initial;
+            border-color: grey;
+            
+        }
+        thead {
+            background-image: linear-gradient(rgb(73, 113, 143), rgb(41, 63, 80));
+            background-color: initial;
+            color: rgb(255, 255, 255);
+            border-radius: 20%;
+        }
+        thead {
+            background: #395870;
+            background: linear-gradient(#568dba, #324c60);
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        tbody, td, tfoot, th, thead, tr {
+            font-family: "Open Sans", sans-serif;
+            border-color: inherit;
+            border-style: solid;
+            border-width: 0;
+            
+        }
+        th, td {
+            padding: 10px 15px;
+            vertical-align: middle;
+            
+        }
+        th {
+            text-align: inherit;
+            text-align: -webkit-match-parent;
+            
+        }
+        .th0{
+            border-top-left-radius: 10px;
+        }
+        .th1{
+            border-top-right-radius: 10px;
+        }
+        body {
+            margin: 0;
+            font-family: var(--bs-font-sans-serif);
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            background-color: #f2f3f8;
+            background-position: 0%;
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .item-stock, .item-qty {
+            text-align: center;
+        }
+        td {
+            border-bottom: 1px solid #cecfd5;
+            border-right: 1px solid #cecfd5;
+            border-left: 1px solid #cecfd5;
+        }
+        th, td {
+            padding: 10px 15px;
+            vertical-align: middle;
+        }
+        .td0{
+            border-bottom-left-radius: 10px;
+        }
+        .td1{
+            border-bottom-right-radius: 10px;
+        }
+        .breadcrumbs {
+            margin-top: 63px;
+            margin-top: 73px;
+            text-align: center;
+            background: #0079bf;
+            padding: 30px 0;
+            color: #fff;
+        }
+        div {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+       
+        #header {
+            background: rgb(255, 255, 255);
+            transition: all 0.5s;
+            z-index: 997;
+            padding: 15px 0;
+
+            box-shadow: 0px 0 18px rgb(55 66 59 / 8%);
+            
+        }
+        .fixed-top {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1030;
+        }
+        .align-items-center {
+            align-items: center!important;
+        }
+        .d-flex {
+            display: flex!important;
+        }
+        .container{
+            width: 100%;
+            padding-right: var(--bs-gutter-x,.75rem);
+            padding-left: var(--bs-gutter-x,.75rem);
+            margin-right: auto;
+            margin-left: auto;
+        }
+        #header .logo {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+            line-height: 1;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-family: "Poppins", sans-serif;
+        }
+        .navbar {
+            padding: 0;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+        .order-last {
+            order: 6!important;
+        }
+        .navbar ul {
+            display: none;
+            color: #cecfd5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+        ul {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+        ul {
+            padding-left: 2rem;
+        }
+        .navbar li {
+            position: relative;
+        }
+        li {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+        .navbar a, .navbar a:focus {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0 10px 30px;
+            font-family: "Poppins", sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            color: #535252;
+            white-space: nowrap;
+            transition: 0.3s;
+        }
+        a {
+            color: #0079bf;
+            text-decoration: none;
+        }
+        ul li:hover a{
+            color: #0079bf;
+            text-decoration: none;
+        }
+        .head{
+        margin-left: 2%;
+        margin-right: auto;
+       }
+       .head1{
+        margin-right: 3%;
+        margin-left: auto;
+       }
+    </style>
+</head>
+<body>
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center head">
+    
+          <h1 class="logo me-auto"><a href="">Python for Machine Learning</a></h1>
+    
+          <nav id="navbar" class="navbar order-last order-lg-0 ss head1">
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="index.html">Day 1</a></li>
+              <li><a href="day2.html">Day 2</a></li>
+              <li><a href="CP.html">Course Project</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <div id = "day2">
+        <div class="breadcrumbs">
+        <div class="container">
+        <div><p></p></div>
+             <h2>Home</h2> 
+             <p>Welcome to Python for Machine Learning Course</p>
+             <p>We 
+                will cover in this Course the basic of Python Programming and some important Libraries for Machine Learning. </p>
+        </div><p>We will try to </p>
+        </div>
+        <div><p></p></div>
+        <table class="center">
+            <thead>
+            <tr>
+                <th class="th0" scope="col">Task</th>
+                <th class="th1" scope="col">Source</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <strong class="book-title">Whatsapp Group</strong>
+                    </td>
+                    <td class="item-stock"><a href="https://chat.whatsapp.com/C44w3AgzTjrBpcPwz5hE0m" target="_blank">jdhfalkjhf</a></td>
+                    
+                </tr>
+                <tr>
+                    <td class = "td0">
+                        <strong class="book-title">Extra resources</strong>
+                    </td>
+                    <td class = "td1"><a href="" target="_blank">resources</a></td>
+                
+                </tr>
+            </tbody>
+        </table>
+        <div><p></p></div>
+</body>
+</html>
