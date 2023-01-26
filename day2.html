@@ -29,7 +29,7 @@
             box-sizing: border-box;
             text-indent: initial;
             border-color: grey;
-            
+            margin-top: 4%;
         }
         thead {
             background-image: linear-gradient(rgb(73, 113, 143), rgb(41, 63, 80));
@@ -219,6 +219,27 @@
         margin-right: 3%;
         margin-left: auto;
        }
+       .instructor{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-family: "Poppins", sans-serif;
+        margin-top: 6%;
+        font-size: 16px;
+        font-weight: 500;
+        color: #ffffff;
+        white-space: nowrap;
+        transition: 0.3s;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        list-style: none;
+       }
+       .whi{
+        color: #0079bf;
+        
+        text-decoration: none;
+       }
     </style>
 </head>
 <body>
@@ -249,6 +270,7 @@
             <div><p></p></div>
             <table class="center">
                 <thead>
+                    
                 <tr>
                     <th class="th0" scope="col">Task</th>
                     <th class="th1" scope="col">Source</th>
@@ -256,13 +278,28 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class = "td0">
+                        <td>
                             <strong class="book-title">Theoretical Part</strong>
+                        </td>
+                        <td class="item-stock"><a href="" target="_blank">Machine Learning</a></td>
+                        
+                    </tr>
+                    <tr>
+                        <td class = "td0">
+                            <strong class="book-title">Practical Part</strong>
                         </td>
                         <td class = "td1"><a href="" target="_blank">Machine Learning</a></td>
                     </tr>
                 </tbody>
             </table>
             <div><p></p></div>
+            <footer>
+                <ul class = ' order-last instructor'>
+                    <li><a class = 'whi' href="https://twitter.com/EyadAlQaysi">Eyad Alqaysi</a></li>
+                    <li><a class = 'whi' href="https://twitter.com/AbdulmajidYHA">Abdulmajid Alsharafi</a></li>
+                    <li><a class = 'whi' href="https://twitter.com/moriarty_12k">Mohammed Alzhrani</a></li>
+                    <li><a class = 'whi' href="">Waleed Alsarhani</a></li>
+                </ul>
+            </footer>
 </body>
 </html>

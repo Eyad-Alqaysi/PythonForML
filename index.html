@@ -28,7 +28,7 @@
             box-sizing: border-box;
             text-indent: initial;
             border-color: grey;
-            
+            margin-top: 4%;
         }
         thead {
             background-image: linear-gradient(rgb(73, 113, 143), rgb(41, 63, 80));
@@ -210,7 +210,7 @@
             color: #0079bf;
             text-decoration: none;
         }
-       .head{
+        .head{
         margin-left: 2%;
         margin-right: auto;
        }
@@ -218,7 +218,27 @@
         margin-right: 3%;
         margin-left: auto;
        }
-   
+       .instructor{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-family: "Poppins", sans-serif;
+        margin-top: 6%;
+        font-size: 16px;
+        font-weight: 500;
+        color: #ffffff;
+        white-space: nowrap;
+        transition: 0.3s;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        list-style: none;
+       }
+       .whi{
+        color: #0079bf;
+        
+        text-decoration: none;
+       }
     </style>
     <title>Day 1 - Python for ML</title>
 </head>
@@ -243,7 +263,8 @@
         <div class="breadcrumbs">
         <div class="container">
              <h2>Day 1: Introduction to Python Programming</h2>
-             <p>Today we will cover an introduction for python, a review of the basic of python Programming.</p><p>Hence it is always a good idea to be proficient in Python before we delve into the theory of AI and ML.</p>
+             <p>Today we will cover the basics of Python programming language.</p>
+             <p>It is always a good idea to be proficient in Python before we delve into AI and ML.</p>
         </div>
     </div>
             <div><p></p></div>
@@ -259,19 +280,27 @@
                         <td>
                             <strong class="book-title">Python</strong>
                         </td>
-                        <td class="item-stock"><a href="" target="_blank">basic of Python</a></td>
+                        <td class="item-stock"><a href="" target="_blank">Basics of Python</a></td>
                         
                     </tr>
                     <tr>
                         <td class = "td0">
                             <strong class="book-title">Python Libraries </strong>
                         </td>
-                        <td class = "td1"><a href="" target="_blank">Numpy and Pandas</a></td>
+                        <td class = "td1"><a href="" target="_blank">Numpy, Pandas and plt</a></td>
                     
                     </tr>
                 </tbody>
             </table>
             <div><p></p></div>
+            <footer>
+                <ul class = ' order-last instructor'>
+                    <li><a class = 'whi' href="https://twitter.com/EyadAlQaysi">Eyad Alqaysi</a></li>
+                    <li><a class = 'whi' href="https://twitter.com/AbdulmajidYHA">Abdulmajid Alsharafi</a></li>
+                    <li><a class = 'whi' href="https://twitter.com/moriarty_12k">Mohammed Alzhrani</a></li>
+                    <li><a class = 'whi' href="">Waleed Alsarhani</a></li>
+                </ul>
+            </footer>
 
 </body>
 </html>
